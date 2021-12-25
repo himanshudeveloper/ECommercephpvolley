@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0000ff"
+    tools:context=".SignUPActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/signup" />
+
+    <EditText
+        android:id="@+id/edtSignUpemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#F44336"
+        android:ems="10"
+        android:hint="Please enter an email address"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtSignUpUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#F44336"
+        android:ems="10"
+        android:hint="please enter an username"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtSignUpPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#F44336"
+        android:ems="10"
+        android:hint="Please Enter password"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtSignUpConfiremPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#F44336"
+        android:ems="10"
+        android:hint="please Enter Confirm Password"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:text="Signup" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="Login" />
+</LinearLayout>
