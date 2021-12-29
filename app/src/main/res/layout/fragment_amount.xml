@@ -5,18 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".FetchEProductsActivity">
+    tools:context=".AmountFragment">
 
-    <TextView
-        android:id="@+id/txtBranName"
+
+    <EditText
+        android:id="@+id/edtEnterAmount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="#FFC107"
-        android:textSize="34sp" />
+        android:ems="10"
+        android:hint="Enter Amount"
+        android:inputType="textPersonName" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/products_RV"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <ImageButton
+        android:id="@+id/btnAddToCard"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/shopping" />
 </LinearLayout>

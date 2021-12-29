@@ -2,18 +2,23 @@ package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.volley.Request
-import com.android.volley.Response
 import com.android.volley.toolbox.JsonArrayRequest
 import com.android.volley.toolbox.Volley
+import com.example.myapplication.Adapter.EProductAdapter
+import com.example.myapplication.databinding.ActivityFetchEproductsBinding
+import com.example.myapplication.model.EProduct
 
 class FetchEProductsActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityFetchEproductsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_fetch_eproducts)
+        binding= ActivityFetchEproductsBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val selectedBrand: String? = intent.getStringExtra("BRAND")
+        binding.txtBranName.text = "Product of $selectedBrand"
 
         var productsList = ArrayList<EProduct>()
 
@@ -25,15 +30,23 @@ class FetchEProductsActivity : AppCompatActivity() {
             response ->
             for (productJOIndex in 0.until(response.length())){
 
-                productsList.add(EProduct(response.getJSONObject(productJOIndex).getInt("id"),
+                productsList.add(
+                    EProduct(response.getJSONObject(productJOIndex).getInt("id"),
                     response.getJSONObject(productJOIndex).getString("name"),
                     response.getJSONObject(productJOIndex).getInt("price"),
                     response.getJSONObject(productJOIndex).getString("picture")
-                ))
+                )
+                )
             }
+
+            val pAdapter = EProductAdapter(this,productsList)
+            binding.productsRV.layoutManager = LinearLayoutManager(this)
+            binding.productsRV.adapter = pAdapter
 
 
         }, { error ->  })
+
+        requestQ.add(jsonAR)
 
 
 

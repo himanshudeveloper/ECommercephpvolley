@@ -4,12 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/hk/AndroidStudioProjects/MyApplication8/app/src/main/res/drawable/plus.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/hk/AndroidStudioProjects/MyApplication8/app/src/main/res/layout/activity_cart_prodct.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/hk/AndroidStudioProjects/MyApplication8/app/src/main/res/layout/activity_fetch_eproducts.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/hk/AndroidStudioProjects/MyApplication8/app/src/main/res/layout/activity_finalize_shoping.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/hk/AndroidStudioProjects/MyApplication8/app/src/main/res/layout/activity_login.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/hk/AndroidStudioProjects/MyApplication8/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/hk/AndroidStudioProjects/MyApplication8/app/src/main/res/layout/activity_sign_upactivity.xml" value="0.22083333333333333" />
         <entry key="..\:/Users/hk/AndroidStudioProjects/MyApplication8/app/src/main/res/layout/brand_item_textview.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/hk/AndroidStudioProjects/MyApplication8/app/src/main/res/layout/e_product_row.xml" value="0.176" />
+        <entry key="..\:/Users/hk/AndroidStudioProjects/MyApplication8/app/src/main/res/layout/fragment_amount.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/hk/AndroidStudioProjects/MyApplication8/app/src/main/res/layout/row_card.xml" value="0.1" />
+        <entry key="..\:/Users/hk/AndroidStudioProjects/MyApplication8/app/src/main/res/menu/card_menu.xml" value="0.1" />
       </map>
     </option>
   </component>
